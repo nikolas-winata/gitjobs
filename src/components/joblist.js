@@ -15,7 +15,6 @@ export default function Query() {
               url: "https://dev6.dansmultipro.com/api/recruitment/positions.json",
               withCredentials: false,
             });
-            console.log(response.data)
             setData(response.data)
           } catch (error) {
             console.log("error!", error);
@@ -30,7 +29,7 @@ export default function Query() {
 
     
     const handleSearch = async (e) => {
-        console.log("search!")
+        console.log("search unimplemented!")
     };
   
     return (

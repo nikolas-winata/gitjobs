@@ -10,15 +10,12 @@ export default function Jobdetail() {
   
 
     const getDetails = async () => {
-        console.log(state)
-        console.log("https://dev6.dansmultipro.com/api/recruitment/positions/" + state.id)
         try {
             const response = await axios({
               method: "get",
               url: "https://dev6.dansmultipro.com/api/recruitment/positions/" + state.id,
               withCredentials: false,
             });
-            console.log(response.data)
             setDetails(response.data)
           } catch (error) {
             console.log("error!", error);

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 export default function Jobpreview(props) {
     const navigate = useNavigate();
     const onSubmit = () => {
-        console.log("props",props)
         navigate("/details", {state: { id: props.data.id}}); 
     }
     
